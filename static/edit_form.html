@@ -1,0 +1,73 @@
+<!DOCTYPE html> <-- Нужно названия и строки ввода разделить на две отдельных группі-->
+<html lang = "uk, en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Сервіс обліку студентів</title>
+        <meta name="description"
+              value = "Система обліку студентів навчального закладу"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <div class = "container">
+            <div class="row" id="header">
+                <div class="col-xs-8">
+                    <h1>Форма редагування студента</h1>
+                </div>
+            <div class="row" id="content-columns">
+                <div class="col-xs-5">
+                    <form>
+                        <div class="form-group">Ім`я*
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ім`я">
+                        </div>
+                        <div class="form-group">
+                            <label>По-батькові</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="По-батькові">
+                        </div>
+                        <div class="form-group">
+                            <label>Прізвище*</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Прізвище">
+                        </div>
+                        <div class="form-group">
+                            <label>№ Білету</label>
+                            <input type="password" class="form-control" id="exampleInputEmail1" placeholder="№ Білету">
+                        </div>
+                        <div class="form-group">
+                            <label>Дата народження</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Дата народження">
+                        </div>
+                        <div class="form-group">
+                            <label>Фото:</label>
+                            <input type="file" id="exampleInputFile">
+                            <p class="help-block">No file chosen</p>
+                        </div>
+                        <div class="dropdown">
+                            <label>Група:</label>
+                            <button class="btn btn-default dropdown-toggle"
+                                    type="button"
+                                    id="dropdownMenu1"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="true">
+                                Група
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">HH-1</a></li>
+                                <li><a href="#">HH-2</a></li>
+                                <li><a href="#">HH-3</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <label>Додаткові нотатки</label>
+                            <textarea class="form-control" rows="3" id="exampleInputEmail1"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https:///maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" ></script>
+    </body>
+</html>

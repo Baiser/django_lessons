@@ -9,7 +9,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer{
     border-top: 1px solid #ddd;
-    padding-top: 10px;
+    padding-%top: 10px;
+    margin: 0;
 }
 
 #group-selector{
@@ -24,4 +25,12 @@ h1, h2, h3, h4, h5, h6 {
     height: 30px;
     line-height: 30px;
     color: #555555;
+}
+#calendar{
+    text-align: center;
+    font-weight: bold;
+}
+
+#exampleInputEmail1{
+    width: 180px;
 }
