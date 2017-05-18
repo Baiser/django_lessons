@@ -1,4 +1,4 @@
-<!DOCTYPE html> <-- Нужно названия и строки ввода разделить на две отдельных группі-->
+<!DOCTYPE html>
 <html lang = "uk, en">
     <head>
         <meta charset="UTF-8"/>
@@ -11,59 +11,76 @@
     <body>
         <div class = "container">
             <div class="row" id="header">
-                <div class="col-xs-8">
+                <div class="col-xs-12">
                     <h1>Форма редагування студента</h1>
                 </div>
-            <div class="row" id="content-columns">
-                <div class="col-xs-5">
-                    <form>
-                        <div class="form-group">Ім`я*
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ім`я">
+            </div>
+            <div class="row" id="form-panel">
+                <div class="col-xs-12">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="Name1" class="col-sm-2 control-label">Ім'я*</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="Name1" placeholder="Ім'я" required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label>По-батькові</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="По-батькові">
+                            <label for="Name3" class="col-sm-2 control-label">По-батькові</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="Name3" placeholder="По-батькові">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label>Прізвище*</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Прізвище">
+                            <label for="Name2" class="col-sm-2 control-label">Прізвище*</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="Name2" placeholder="Прізвище" required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label>№ Білету</label>
-                            <input type="password" class="form-control" id="exampleInputEmail1" placeholder="№ Білету">
+                            <label for="BiletNumber" class="col-sm-2 control-label">№ білету*</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="BiletNumber" placeholder="№ білету" required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label>Дата народження</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Дата народження">
+                            <label for="BirthDate" class="col-sm-2 control-label">Дата народження</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="BirthDate" placeholder="РРРР-ММ-ДД">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label>Фото:</label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="help-block">No file chosen</p>
+                            <label for="InputFile" class="col-sm-2 control-label">Фото</label>
+                            <div class="col-sm-4">
+                                Наразі:<a href="#">photos/img.jpg</a><p>
+                                <button type="button" class="btn btn-default btn-xs">Очистити</button></p>
+                                <p>
+                                <label for="InputFile" class="col-sm-2 control-label">Змінити</label>
+                                <input type="file" id="InputFile"></p>
+                            </div>
                         </div>
-                        <div class="dropdown">
-                            <label>Група:</label>
-                            <button class="btn btn-default dropdown-toggle"
-                                    type="button"
-                                    id="dropdownMenu1"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="true">
-                                Група
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">HH-1</a></li>
-                                <li><a href="#">HH-2</a></li>
-                                <li><a href="#">HH-3</a></li>
-                            </ul>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Група*</label>
+                            <div class="col-sm-3">
+                                <select class="form-control" required>
+                                    <option value="">HH-1</option>
+                                    <option value="">HH-2</option>
+                                    <option value="">HH-3</option>
+                                </select>
+                            </div>
                         </div>
-                        <div>
-                            <label>Додаткові нотатки</label>
-                            <textarea class="form-control" rows="3" id="exampleInputEmail1"></textarea>
+                        <div class="form-group">
+                            <label for="BiletNumber" class="col-sm-2 control-label">Додаткові нотатки</label>
+                            <div class="col-sm-3">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
                     </form>
+                </div>
+            </div>
+            <div class="row col-xs-12" id="form-footer">
+                <div class="col-md-4 col-md-offset-2">
+                    <button type="button" class="btn btn-primary" id="button-form">Зберегти</button>
+                    <button type="button" class="btn btn-link" id="button-form">Скасувати</button>
                 </div>
             </div>
         </div>

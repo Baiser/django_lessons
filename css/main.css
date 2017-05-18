@@ -31,6 +31,35 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-#exampleInputEmail1{
-    width: 180px;
+.col-sm-2{
+    font-weight: normal;
+}
+
+#InputFile{
+    padding-left: 10px;
+}
+
+.control-label{
+    margin-left: -15px;
+}
+
+.btn-xs{
+    border:0;
+    margin-left: -5px;
+}
+
+.btn-primary{
+    margin-left:-35px;
+}
+
+#form-footer{
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    padding-%top: 10px;
+    margin: 0;
+}
+
+#button-form{
+    margin-top: 20px;
+
 }
