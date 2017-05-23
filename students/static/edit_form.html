@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "uk, en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Сервіс обліку студентів</title>
+        <meta name="description"
+              value = "Система обліку студентів навчального закладу"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class = "container">
+            <div class="row" id="header">
+                <div class="col-xs-12">
+                    <h1>Форма редагування студента</h1>
+                </div>
+            </div>
+            <div class="row" id="form-panel">
+                <div class="col-xs-12">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="Name1" class="col-sm-2 control-label">Ім'я*</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="Name1" placeholder="Ім'я" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Name3" class="col-sm-2 control-label">По-батькові</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="Name3" placeholder="По-батькові">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Name2" class="col-sm-2 control-label">Прізвище*</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="Name2" placeholder="Прізвище" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="BiletNumber" class="col-sm-2 control-label">№ білету*</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="BiletNumber" placeholder="№ білету" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="BirthDate" class="col-sm-2 control-label">Дата народження</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="BirthDate" placeholder="РРРР-ММ-ДД">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputFile" class="col-sm-2 control-label">Фото</label>
+                            <div class="col-sm-4">
+                                Наразі:<a href="#">photos/img.jpg</a><p>
+                                <button type="button" class="btn btn-default btn-xs">Очистити</button></p>
+                                <p>
+                                <label for="InputFile" class="col-sm-2 control-label">Змінити</label>
+                                <input type="file" id="InputFile"></p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Група*</label>
+                            <div class="col-sm-3">
+                                <select class="form-control" required>
+                                    <option value="">HH-1</option>
+                                    <option value="">HH-2</option>
+                                    <option value="">HH-3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="BiletNumber" class="col-sm-2 control-label">Додаткові нотатки</label>
+                            <div class="col-sm-3">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row col-xs-12" id="form-footer">
+                <div class="col-md-4 col-md-offset-2">
+                    <button type="button" class="btn btn-primary button-edit" id="button-form">Зберегти</button>
+                    <button type="button" class="btn btn-link" id="button-form">Скасувати</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https:///maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "uk, en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Сервіс обліку студентів</title>
+        <meta name="description"
+              value = "Система обліку студентів навчального закладу"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <div class = "container">
+            <div class="row" id="header">
+                <div class="col-xs-8">
+                    <h1>Сервіс обліку студентів</h1>
+                </div>
+                <div class="col-xs-4" id="group-selector">
+                    <strong>Група:</strong>
+                    <select>
+                        <option value="">Усі студенти</option>
+                        <option value="">Мфын Мфыыын Ввывыуууц вы №123111</option>
+                        <option value="">sdfsdf DSdsdsd dssad DSD #2113124</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" id="sub-header">
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a href="#">Студенти</a></li>
+                        <li role="presentation"><a href="#">Відвідування</a></li>
+                        <li role="presentation"><a href="#">Групи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="content-columns">
+                <div class="col-xs-12" id="content-column">
+                    <div class="alert alert-warning" role="alert">Зміни скасовано</div>
+                    <h2>База студентів</h2>
+                    <a class="btn btn-primary" href="#">Додати студента</a>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th><a href="">№</a></th>
+                                <th>Фото</th>
+                                <th><a href="">Прізвище</a></th>
+                                <th><a href="">Ім`я</a></th>
+                                <th><a href="">№ білету</a></th>
+                                <th>Дії</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img height="40" width="45" src="../img/shim.jpg" class="img-circle"> </td>
+                                <td>Second Name</td>
+                                <td>First Name</td>
+                                <td>1705</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle"
+                                                type="button"
+                                                id="dropdownMenu1"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="true">Дія
+                                                <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Відвідування</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Редагування</a>
+                                            </li><li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Видалити</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav>
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row" id="footer">
+                <div class="col-xs-12">
+                &copy; 2014 Сервіс Обліку Студентів
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https:///maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" ></script>
+    </body>
+</html>
