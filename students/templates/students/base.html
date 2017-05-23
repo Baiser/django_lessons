@@ -7,7 +7,7 @@
         <meta name="description"
               value = "Система обліку студентів навчального закладу"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{{ PORTAL_URL }}{% static 'css/main.css' %}">
         {% block extra_css %}{% endblock %}
     </head>
 <!-- Header -->
@@ -31,9 +31,9 @@
             <div class="row" id="sub-header">
                 <div class="col-xs-12">
                     <ul class="nav nav-tabs">
-                        <li role="presentation" class="active"><a href="{% url 'home' %}">Студенти</a></li>
-                        <li role="presentation"><a href="/journal">Відвідування</a></li>
-                        <li role="presentation"><a href="{% url 'groups' %}">Групи</a></li>
+                        <li role="presentation" {% url 'home' as home %}{% if request.path == home %} class="active" {% endif %}><a href="{% url 'home' %}">Студенти</a></li>
+                        <li role="presentation" {% if '/journal' in request.path %} class="active" {% endif %}><a href="/journal">Відвідування</a></li>
+                        <li role="presentation" {% if '/groups' in request.path %} class="active" {% endif %}><a href="{% url 'groups' %}">Групи</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +57,7 @@
         </div>
 <!-- Javascript inclusion -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https:///maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" ></script>
+        <script src="https:///maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         {% block extra_js %}{% endblock %}
     </body>
 </html>
